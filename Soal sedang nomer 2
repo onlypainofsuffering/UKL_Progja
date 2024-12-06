@@ -1,0 +1,28 @@
+package ukl.soal.pkg2;
+
+/**
+ *
+ * @author LOQ 01
+ */
+import java.util.Scanner;
+public class UKLSOAL2 {
+
+    /**
+     * @param args the command line arguments
+     */
+  public static double caraluasPermukaan(double jariJari) {
+        final double PI = 3.14;
+        return 4 * PI * jariJari * jariJari;    
+    }
+
+    public static void main(String[] args) {
+        Scanner ukl = new Scanner(System.in);
+        
+        System.out.println("Masukkan Jari-jari Bola: ");
+        
+        double jariJari = ukl.nextDouble();
+        double luasPermukaan = caraluasPermukaan(jariJari);
+        
+        System.out.println("Luas permukaan bola adalah: " + luasPermukaan);
+    }
+}
