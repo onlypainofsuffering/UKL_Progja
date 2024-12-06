@@ -1,0 +1,35 @@
+package ukl.soal.pkg3;
+
+/**
+ *
+ * @author LOQ 01
+ */
+public class UKLSOAL3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int[] angka = {5, -3, 7, 9, -1};
+        boolean adaNegatif = false;
+
+        System.out.print("Array mengandung elemen negatif: ");
+        for (int i = 0; i < angka.length; i++) {
+            if (angka[i] < 0) {
+                if (!adaNegatif) {
+                    adaNegatif = true;
+                } else {
+                    System.out.print(", ");
+                }
+                System.out.print(angka[i]);
+            }
+        }
+
+        if (!adaNegatif) {
+            System.out.println("Tidak ada elemen negatif.");
+        } else {
+            System.out.println();
+        }
+    }
+}
